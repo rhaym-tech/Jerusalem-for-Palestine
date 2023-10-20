@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Jerusalem for Palestine",
+    "version": "1.0",
+    "description": "Replace 'Capital of Israel' with 'Capital of Palestine' on Google search results.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.google.com/search*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+}
